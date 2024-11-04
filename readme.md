@@ -1,3 +1,5 @@
+[![Tests](https://github.com/sentryco/Cipher/actions/workflows/Tests.yml/badge.svg)](https://github.com/sentryco/Cipher/actions/workflows/Tests.yml)
+
 # Cipher 🔐
 
 > Encryption lib (CryptoKit wrapper)
