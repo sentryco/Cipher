@@ -1,7 +1,7 @@
 [![Tests](https://github.com/sentryco/Cipher/actions/workflows/Tests.yml/badge.svg)](https://github.com/sentryco/Cipher/actions/workflows/Tests.yml)
 [![codebeat badge](https://codebeat.co/badges/defeb515-78e7-4a29-a4f1-6f58191ace4c)](https://codebeat.co/projects/github-com-sentryco-cipher-main)
 
-# Cipher 🔐
+# Cipher 🔏
 
 > Encryption lib (CryptoKit wrapper)
 
