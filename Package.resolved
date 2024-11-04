@@ -1,0 +1,41 @@
+{
+  "pins" : [
+    {
+      "identity" : "dice",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sentryco/Dice.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "566f31f7019c5c8278ef081c6a30044d852f3c86"
+      }
+    },
+    {
+      "identity" : "filesugar",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/eonist/FileSugar.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "c2b801b6afa82283e11ba4e534d21f0e472e89c8"
+      }
+    },
+    {
+      "identity" : "jsonsugar",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/eonist/JSONSugar.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "de543ae05fe2c18a6d0a3bca1d24656703ced9cd"
+      }
+    },
+    {
+      "identity" : "logger",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sentryco/Logger.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "46a88bb44412fdfb0764a80a7cae6477fc315010"
+      }
+    }
+  ],
+  "version" : 2
+}
