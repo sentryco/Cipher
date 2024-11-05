@@ -13,8 +13,8 @@ let package = Package(
             targets: ["Cipher"]) // Defines the library product with the target Cipher
     ], // Lists the products of the package
     dependencies: [
-        .package(url: "https://github.com/sentryco/Logger.git", branch: "main"), // Adds Logger as a dependency
-        .package(url: "https://github.com/sentryco/Dice.git", branch: "main") // Adds Dice as a dependency
+        .package(url: "https://github.com/sentryco/Logger", branch: "main"), // Adds Logger as a dependency
+        .package(url: "https://github.com/sentryco/Dice", branch: "main") // Adds Dice as a dependency
     ], // Lists the dependencies of the package
     targets: [
         .target(
