@@ -3,7 +3,7 @@
     {
       "identity" : "dice",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/sentryco/Dice.git",
+      "location" : "https://github.com/sentryco/Dice",
       "state" : {
         "branch" : "main",
         "revision" : "566f31f7019c5c8278ef081c6a30044d852f3c86"
@@ -30,7 +30,7 @@
     {
       "identity" : "logger",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/sentryco/Logger.git",
+      "location" : "https://github.com/sentryco/Logger",
       "state" : {
         "branch" : "main",
         "revision" : "46a88bb44412fdfb0764a80a7cae6477fc315010"
