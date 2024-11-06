@@ -173,7 +173,7 @@ extension CipherTests {
                data: encryptedData, // The encrypted data to be decrypted
                key: privKey // The symmetric key used for decryption
             ) {
-               let str: String? = String.init(data: decryptedData, encoding: .utf8)
+               let str: String? = String(data: decryptedData, encoding: .utf8)
                let assert = str == string
                // assert content
                Swift.print("assert:  \(assert ? "✅" : "🚫")")
