@@ -64,3 +64,4 @@ String(data: decryptedData, encoding: .utf8) // abc123
 - Add Introduction: Expand the introduction to include more details about the library. What makes it unique? Why should someone use it over other libraries? What problems does it solve?
 Installation: Include a section on how to install and setup your library. This could include the commands to run, any dependencies that need to be installed, etc.
 - Add Usage: Expand the examples section to include more comprehensive examples. Show how to use the library in a real-world scenario. This could include examples of how to handle errors, how to use the library in a larger project, etc.
+- Clean up this readme. esp the tables
