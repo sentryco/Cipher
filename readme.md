@@ -11,11 +11,11 @@ Cipher is an encryption library that serves as a wrapper for CryptoKit. It provi
 
 Cipher provides a comprehensive set of cryptographic operations, including:
 
-- **Key Generation**: Generate symmetric keys for encryption and decryption.  
-- **Encryption and Decryption**: Encrypt and decrypt data using symmetric keys.  
-- **Key Export and Import**: Export and import keys to and from raw string representations. 
-- **Shared Key Creation**: Create shared keys for end-to-end encryption using the Diffie-Hellman key agreement.  
-- **Password-based Encryption**: Encrypt and decrypt data using a password key.  
+- 🔑 **Key Generation**: Generate symmetric keys for encryption and decryption.  
+- 🔒 **Encryption and Decryption**: Encrypt and decrypt data using symmetric keys.  
+- 🔄 **Key Export and Import**: Export and import keys to and from raw string representations. 
+- 🤝 **Shared Key Creation**: Create shared keys for end-to-end encryption using the Diffie-Hellman key agreement.  
+- 🔐 **Password-based Encryption**: Encrypt and decrypt data using a password key.  
 
 ## Table of Contents
 - [Examples](#examples)
