@@ -37,6 +37,10 @@ let encryptedData: Data = try Cipher.encrypt(data: "hello world".data(using: .ut
 let decryptedData: Data = try Cipher.decrypt(data: encryptedData, key: pswKey) // Decrypt payload with remote shared key
 String(data: decryptedData, encoding: .utf8) // abc123
 ```
+
+> **Note**: Ensure the salt is stored or transmitted securely alongside the ciphertext for decryption.
+
+
 ## Resources
 | Topic | Link |
 | --- | --- |
@@ -65,3 +69,4 @@ String(data: decryptedData, encoding: .utf8) // abc123
 Installation: Include a section on how to install and setup your library. This could include the commands to run, any dependencies that need to be installed, etc.
 - Add Usage: Expand the examples section to include more comprehensive examples. Show how to use the library in a real-world scenario. This could include examples of how to handle errors, how to use the library in a larger project, etc.
 - Clean up this readme. esp the tables
+- Remove Logger from deps
