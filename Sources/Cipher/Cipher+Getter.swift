@@ -84,23 +84,20 @@ extension Cipher {
     * - Returns: The symmetric key
     * - Throws: An error if the key cannot be generated
     */
-   public static func getPasswordKey(password: String) throws -> SymmetricKey {
+   public static func getPasswordKey(password: String, salt: Data = Cipher.defaultSalt) throws -> SymmetricKey {
       // Convert the password string to a Data object.
-      guard let data: Data = password.data(using: .utf8) else {
+      guard let passwordData = password.data(using: .utf8) else {
          throw NSError(domain: "password data error", code: 0)
       }
-      // Create a SHA256 hash from the password data
-      let hash: SHA256.Digest = SHA256.hash(data: data)
-      // Convert the SHA256 hash to a string.
-      let hashString: String = hash.map { String(format: "%02hhx", $0) }.joined()
-      // Take the first 32 bytes of the SHA256 hash string
-      let subString: String = .init(hashString.prefix(32))
-      // Convert the substring to a Data object
-      guard let keyData: Data = subString.data(using: .utf8) else {
-         throw NSError(domain: "key data err", code: 0)
-      }
-      // Create a new SymmetricKey using the keyData as the seed.
-      return .init(data: keyData)
+      // Combine the password data with the salt.
+      var combinedData = passwordData
+      combinedData.append(salt)
+      // Create a SHA256 hash from the combined data.
+      let hash = SHA256.hash(data: combinedData)
+      // Use the hash data directly to create a SymmetricKey.
+      return SymmetricKey(data: hash)
+      // conider using: 
+      // try HKDF(password: password, salt: salt)
    }
    /**
     * Returns the raw data representation of a private key

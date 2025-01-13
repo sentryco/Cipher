@@ -35,8 +35,10 @@ extension CipherTests {
     */
    fileprivate func encryptionTest() throws {
       // Swift.print("encryptionTest")
-      // - Fixme: ⚠️️ guard with fail on the bellow line
-      let data: Data = "123abc".data(using: .utf8) ?? Data() // Create a Data object from a string
+      guard let data = "123abc".data(using: .utf8) else {  // Create a Data object from a string
+         XCTFail("Failed to convert string to data")
+         return
+      }
       let privKey: SymmetricKey = Cipher.privKey256 // Get a private key for encryption
       let encryptedData: Data = try Cipher.encrypt(data: data, key: privKey) // Encrypt the data using the private key
       let decryptedData: Data = try Cipher.decrypt(data: encryptedData, key: privKey) // Decrypt the data using the private key
