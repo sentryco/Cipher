@@ -199,7 +199,7 @@ do {
 - Use a unique salt for each encryption operation.
 - Store or transmit the salt securely alongside the ciphertext.
 - Avoid using predictable or static values for the salt.
-```
+ 
 
 > **Note**: Ensure the salt is stored or transmitted securely alongside the ciphertext for decryption.
 
