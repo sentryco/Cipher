@@ -402,3 +402,62 @@ extension CipherTests {
       XCTAssertNotNil(keyPair.pub, "Public key should not be nil")
    }
 }
+// Test Encryption and Decryption with Empty Inputs
+
+extension CipherTests {
+    /**
+     * Tests encryption and decryption with empty data.
+     *
+     * This test ensures that encrypting and decrypting empty data does not cause any errors
+     * and that the decrypted data is also empty.
+     *
+     * - Throws: An error if encryption or decryption fails unexpectedly.
+     */
+    func testEncryptDecryptEmptyData() throws {
+        let key = SymmetricKey(size: .bits256)
+        let emptyData = Data()
+
+        let encryptedData = try Cipher.encrypt(data: emptyData, key: key)
+        let decryptedData = try Cipher.decrypt(data: encryptedData, key: key)
+
+        XCTAssertEqual(decryptedData, emptyData, "Decrypted data should match the original empty data")
+    }
+}
+ 
+
+// Test Encryption and Decryption with Maximum and Minimum Input Sizes
+
+extension CipherTests {
+    /**
+     * Tests encryption and decryption with minimum input size (empty data).
+     *
+     * This test ensures that encrypting and decrypting empty data works as expected.
+     *
+     * - Throws: An error if encryption or decryption fails.
+     */
+    func testEncryptDecryptMinimumSizeData() throws {
+        // Reuse the testEncryptDecryptEmptyData test
+        try testEncryptDecryptEmptyData()
+    }
+
+    /**
+     * Tests encryption and decryption with maximum input size.
+     *
+     * This test ensures that encrypting and decrypting a large amount of data works as expected.
+     *
+     * - Throws: An error if encryption or decryption fails.
+     */
+    func testEncryptDecryptMaximumSizeData() throws {
+        let key = SymmetricKey(size: .bits256)
+
+        // Generate a large data buffer, e.g., 10MB of data
+        let maximumSize = 10 * 1024 * 1024 // 10 MB
+        let largeData = Data(count: maximumSize)
+
+        let encryptedData = try Cipher.encrypt(data: largeData, key: key)
+        let decryptedData = try Cipher.decrypt(data: encryptedData, key: key)
+
+        XCTAssertEqual(decryptedData, largeData, "Decrypted data should match the original large data")
+    }
+}
+
