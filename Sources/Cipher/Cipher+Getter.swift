@@ -28,7 +28,7 @@ extension Cipher {
       // Create a new public key from the raw data representation
       let pubKey: PubKey = try .init(rawRepresentation: pubKeyData)
       // Return the key pair as a tuple
-      return (priv: privKey, pub: pubKey)
+      return .init(priv: privKey, pub: pubKey)
    }
    /**
     * Generates a shared symmetric key using the Elliptic Curve Diffie-Hellman key agreement algorithm and the HKDF key derivation function.

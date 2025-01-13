@@ -47,6 +47,7 @@ Review the implementation to confirm that cryptographic best practices are follo
 - Use appropriate key sizes (e.g., 256-bit keys for symmetric encryption).
 - Implement key derivation functions (KDFs) correctly, using appropriate salts and iteration counts.
 - Handle cryptographic operations securely to prevent timing attacks or side-channel leaks.
+- Secure Random Number Generation: Use secure methods for generating keys and salts.
 
 
 ## Resources

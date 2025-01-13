@@ -25,7 +25,13 @@ public typealias PubKey = Curve25519.KeyAgreement.PublicKey
  *                as encryption and decryption.
  * - fixme: ⚠️️ Consider creating a struct instead of typealias for better readability and maintainability.
  */
-public typealias KeyPair = (
-    priv: PrivKey, // The private key of the key pair
-    pub: PubKey // The public key of the key pair
-)
+ public struct KeyPair {
+    // The private key of the key pair
+    public let priv: PrivKey
+    // The public key of the key pair
+    public let pub: PubKey
+}
+// public typealias KeyPair = (
+//     priv: PrivKey, 
+//     pub: PubKey 
+// )
