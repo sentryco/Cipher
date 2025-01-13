@@ -30,6 +30,10 @@ public typealias PubKey = Curve25519.KeyAgreement.PublicKey
     public let priv: PrivKey
     // The public key of the key pair
     public let pub: PubKey
+    public init(priv: PrivKey, pub: PubKey) {
+       self.priv = priv
+       self.pub = pub
+    }
 }
 // public typealias KeyPair = (
 //     priv: PrivKey, 
