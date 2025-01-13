@@ -24,7 +24,7 @@ extension Cipher {
    public static func encrypt(data: Data, key: SymmetricKey) throws -> Data {
       // Log an info message to indicate that the encryption process has started.
       // - Fixme: ⚠️️ Remove this probably. too much logging
-      Logger.info("\(Trace.trace())", tag: .security)
+      print("\(Trace.trace())")
       do {
          // Seal the data using the specified key.
          let sealedBox: ChaChaPoly.SealedBox = try ChaChaPoly.seal(

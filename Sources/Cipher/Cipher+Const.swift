@@ -94,7 +94,7 @@ extension Cipher {
       // Convert the salt string to a Data object.
       guard let saltData: Data = .init(base64Encoded: salt128Bit) else {
          // Log an error and terminate the program if the salt cannot be decoded.
-         Logger.error("\(Trace.trace())", tag: .security)
+         print(Trace.trace())
          fatalError("Error, defaultSalt")
       }
       // Return the salt data.
@@ -137,7 +137,7 @@ extension Cipher {
       // Check if the random byte generation was successful.
       guard result == errSecSuccess else {
          // Log an error and terminate the program if the salt cannot be generated.
-         Logger.error("Failed to generate random salt", tag: .security)
+         print("\(Trace.trace()) - Failed to generate random salt")
          fatalError("Error generating random salt")
       }
       // Return the Data object containing the random bytes.

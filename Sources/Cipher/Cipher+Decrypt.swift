@@ -36,7 +36,7 @@ extension Cipher {
    public static func decrypt(data: Data, key: SymmetricKey) throws -> Data {
       // Log an info message to indicate that the decryption process has started.
       // - Fixme: ⚠️️ remove this probably. too much logging
-      Logger.info("\(Trace.trace())", tag: .security)
+      print("\(Trace.trace())")
       do {
          // Create a sealed box from the encrypted data.
          let sealedBox: ChaChaPoly.SealedBox = try ChaChaPoly.SealedBox(combined: data)

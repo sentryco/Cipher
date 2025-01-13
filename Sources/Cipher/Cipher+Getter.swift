@@ -96,7 +96,7 @@ extension Cipher {
       let hash = SHA256.hash(data: combinedData)
       // Use the hash data directly to create a SymmetricKey.
       return SymmetricKey(data: hash)
-      // conider using: 
+      // Fixme: ⚠️️ conider using (check with copilot): 
       // try HKDF(password: password, salt: salt)
    }
    /**
