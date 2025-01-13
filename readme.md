@@ -68,6 +68,16 @@ Review the implementation to confirm that cryptographic best practices are follo
 | Poly1305 | [Link](https://doc.libsodium.org/secret-key_cryptography/aead/chacha20-poly1305/xchacha20-poly1305_construction) |
 | swift-sodium | [Link](https://github.com/jedisct1/swift-sodium) |
 
+### Alternatives:
+
+Similar opensource swift repositories that are essentially crypto kit wrappers
+
+- CryptoSwift: https://github.com/krzyzanowskim/ 
+- Swift Crypto: https://github.com/apple/ 
+- SwiftRSA: https://github.com/puretears/ 
+- RNCryptor: https://github.com/RNCryptor/ 
+- DRACOON Swift Crypto SDK: https://github.com/dracoon/dracoon-swift-crypto-sdk
+
 ### Todo:
 - Add more / better doc and examples
 - Show how migration API would work etc
