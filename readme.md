@@ -9,22 +9,21 @@ Cipher is a Swift encryption library that acts as a simplified wrapper around Ap
 
 ## Table of Contents
 
-- [Cipher 🔏](#cipher-)
-  - [Why Cipher?](#why-cipher)
-  - [Key Features](#key-features)
-  - [Installation](#installation)
-  - [Examples](#examples)
-    - [Generating Keys](#generating-keys)
-    - [Creating a Shared Key for End-to-End Encryption](#creating-a-shared-key-for-end-to-end-encryption)
-    - [Encrypting and Decrypting Data with a Password](#encrypting-and-decrypting-data-with-a-password)
-    - [Real-World Scenario: Secure Messaging](#real-world-scenario-secure-messaging)
-    - [Exporting and Importing Keys](#exporting-and-importing-keys)
-    - [Working with Salt](#working-with-salt)
-  - [Cryptographic Best Practices](#cryptographic-best-practices)
-  - [Resources](#resources)
-  - [Other Encryption Libraries](#other-encryption-libraries)
-    - [Related Encryption Libraries](#related-encryption-libraries)
-  - [Todo](#todo)
+- [Why Cipher?](#why-cipher)
+- [Key Features](#key-features)
+- [Installation](#installation)
+- [Examples](#examples)
+  - [Generating Keys](#generating-keys)
+  - [Creating a Shared Key for End-to-End Encryption](#creating-a-shared-key-for-end-to-end-encryption)
+  - [Encrypting and Decrypting Data with a Password](#encrypting-and-decrypting-data-with-a-password)
+  - [Real-World Scenario: Secure Messaging](#real-world-scenario-secure-messaging)
+  - [Exporting and Importing Keys](#exporting-and-importing-keys)
+  - [Working with Salt](#working-with-salt)
+- [Cryptographic Best Practices](#cryptographic-best-practices)
+- [Resources](#resources)
+- [Other Encryption Libraries](#other-encryption-libraries)
+  - [Related Encryption Libraries](#related-encryption-libraries)
+- [Todo](#todo)
 
 **Why Cipher?**
 
