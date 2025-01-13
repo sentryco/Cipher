@@ -40,6 +40,14 @@ String(data: decryptedData, encoding: .utf8) // abc123
 
 > **Note**: Ensure the salt is stored or transmitted securely alongside the ciphertext for decryption.
 
+## Cryptographic Best Practices
+
+Review the implementation to confirm that cryptographic best practices are followed:
+- Use authenticated encryption modes (like ChaCha20-Poly1305) to ensure data integrity.
+- Use appropriate key sizes (e.g., 256-bit keys for symmetric encryption).
+- Implement key derivation functions (KDFs) correctly, using appropriate salts and iteration counts.
+- Handle cryptographic operations securely to prevent timing attacks or side-channel leaks.
+
 
 ## Resources
 | Topic | Link |
