@@ -8,6 +8,8 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+  schedule:
+    - cron: '0 0 * * *' # every day at midnight
 
 jobs:
   build:
@@ -16,6 +18,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    - name: Sleep for a random duration (scheduled runs only)
+      if: github.event_name == 'schedule'
+      run: |
+        MAX_SLEEP=$((6 * 3600)) # Maximum sleep time of 6 hours
+        RANDOM_SLEEP=$(( RANDOM % MAX_SLEEP ))
+        echo "Sleeping for $RANDOM_SLEEP seconds..."
+        sleep $RANDOM_SLEEP
     - name: Build
       run: swift build -v
     - name: Run tests
