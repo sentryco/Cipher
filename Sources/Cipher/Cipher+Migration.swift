@@ -133,7 +133,7 @@ extension Cipher {
          data: data // The data to export
       )
       // Write the encrypted data to the specified file path
-      FileModifier.write(
+      try FileModifier.write(
          path: url.path, // The path to the file to write to
          data: encryptedData // The encrypted data to write to the file
       )
