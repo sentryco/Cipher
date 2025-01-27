@@ -31,7 +31,6 @@ Cipher is a Swift encryption library that acts as a simplified wrapper around Ap
 - **Security**: Built on top of CryptoKit, Cipher ensures your encryption follows industry best practices.
 - **Comprehensive Features**: From key generation to secure messaging, Cipher covers a wide range of cryptographic needs.
 
-
 ## Key Features
 
 - 🔑 **Key Generation**: Generate symmetric and asymmetric keys for encryption and decryption.
@@ -142,7 +141,7 @@ let decryptedMessageData = try Cipher.decrypt(data: encryptedMessage, key: share
 let decryptedMessage = String(data: decryptedMessageData, encoding: .utf8)
 print(decryptedMessage) // Outputs: Hello, User B!
 ```
- 
+
 ### Exporting and Importing Keys
 
 You can export and import keys to facilitate key migration or storage:
@@ -203,7 +202,6 @@ do {
 
 > **Note**: Ensure the salt is stored or transmitted securely alongside the ciphertext for decryption.
 
-
 ## Cryptographic Best Practices
 
 Cipher follows cryptographic best practices to ensure data security:
@@ -241,9 +239,9 @@ Cipher follows cryptographic best practices to ensure data security:
 - DRACOON Swift Crypto SDK: https://github.com/dracoon/dracoon-swift-crypto-sdk
  
 ### Todo:
-- Add more / better doc and examples
-- Show how migration API would work etc
-- Add some more doc around salt
+- Add more / better doc and examples ✅
+- Show how migration API would work etc ✅
+- Add some more doc around salt 👈
 - Add Introduction: Expand the introduction to include more details about the library. What makes it unique? Why should someone use it over other libraries? What problems does it solve?
 Installation: Include a section on how to install and setup your library. This could include the commands to run, any dependencies that need to be installed, etc.
 - Add Usage: Expand the examples section to include more comprehensive examples. Show how to use the library in a real-world scenario. This could include examples of how to handle errors, how to use the library in a larger project, etc.
